@@ -65,7 +65,7 @@
 
 	    if (a>0 && b>0) {
 	        sum = a*b;
-	        width = sum.length+1;
+	        width = (sum.toString().length)+1;
 
 	        var header  = document.createElement("table"),
 	            calcmap = document.createElement("table"),
@@ -119,6 +119,8 @@
 	 * @param {number} width
 	 */
 	module.exports = function (table , linesArr , width) {
+	    console.log('width');
+	    console.log(width);
 	    lines = linesArr.length;
 	    width = width || 12;
 
